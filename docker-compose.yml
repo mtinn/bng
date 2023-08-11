@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+    mysql:
+        container_name: "bng-api-db"
+        image: mariadb
+        ports:
+            - 3307:3306
+        environment:
+            MYSQL_USER: admin
+            MYSQL_PASSWORD: admin
+            MYSQL_DATABASE: bng
+            MYSQL_RANDOM_ROOT_PASSWORD: pass

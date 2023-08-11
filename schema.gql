@@ -1,0 +1,19 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: String!
+  name: String!
+  email: String!
+  roles: Role!
+}
+
+type Role {
+  id: String!
+  name: String!
+}
+
+type Query {
+  getUsers: [User!]!
+}
